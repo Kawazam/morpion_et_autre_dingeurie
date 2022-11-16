@@ -23,7 +23,7 @@ def morpion():
         print(f"{curPlayer[curPlayerID]}, c'est à toi !")
 
         #Assigner à la variable choixX le retour de la variable input("coordonné x : ") sous forme d'entier
-        choixX = float(input("coordonné x : "))
+        choixX = int(input("coordonné x : "))
         #Si choixX ne rentre pas dans le tableau
         while choixX < 0 or choixX > 2:
         #Afficher un message d'erreur
@@ -31,13 +31,13 @@ def morpion():
             #Assigner à la variable choixX le retour de la variable input("coordonné x : ") sous forme d'entier
             choixX = float(input("coordonné x : "))
         #Assigner à la variable choixX le retour de la variable input("coordonné y : ") sous forme d'entier
-        choixY = float(input("coordonné y : "))
+        choixY = int(input("coordonné y : "))
         #Si choixY ne rentre pas dans le tableau
         if choixY < 0 or choixY > 2:
         #Afficher un message d'erreur
             print("Choix invalide")
             #Assigner à la variable choixX le retour de la variable input("coordonné y : ") sous forme d'entier
-            choixY = float(input("coordonné y : "))
+            choixY = int(input("coordonné y : "))
 
         #Si tab[choixX][choixY] est different de "_".
         if tab[choixX][choixY] != "_":
