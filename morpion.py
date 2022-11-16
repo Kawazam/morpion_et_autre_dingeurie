@@ -68,4 +68,4 @@ def morpion():
             #Alors on change l'ID de curPlayerID en multipliant la variable par -1.
             curPlayerID = curPlayerID * -1
 
-morpion()
+morpion() 
