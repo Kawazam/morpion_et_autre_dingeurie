@@ -205,6 +205,9 @@ def playerVesusCpuGame():
             curPlayerID = curPlayerID * -1
 
 
+#-----------------------PLAYER VS IA--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Définir une fonction playerVersusJarvisGame() qui permet de jouer contre une intelligence artificiel qui ne peux que gagner ou égaliser
+
 #-----------------------MENU--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #Définir la fonction morpionMenu() qui présente le menu du jeux et les différentes option
