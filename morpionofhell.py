@@ -1,10 +1,10 @@
-def playerVesusJarvisGame():
+def playerVesusTerminatorGame():
     #Definir un tableau de 3 x 3 avec des symboles vide.
     tab = [ ["_" for i in range(3)] for i in range(3) ]
     #Definir un dictionaire dans lequel on stock le nom des joueurs
     curPlayer = {
         1: "Joueur 1",
-        -1: "Jarvis"
+        -1: "Terminator"
     }
     #Definir une variable à laquelle on assigne l'ID du joueur actuel
     curPlayerID = 1
@@ -16,7 +16,7 @@ def playerVesusJarvisGame():
     #Définir la variable actionTurn à 0
     actionTurn = 0
 
-    #Rentrer la première action de Jarvis qui joue aux coordonnées [1][1]
+    #Rentrer la première action de Terminator qui joue aux coordonnées [1][1]
     tab[1][1] = "X"
 
     #Tant que True
@@ -28,7 +28,7 @@ def playerVesusJarvisGame():
         while not check:
             #Si le joueur est cpu
             if curPlayerID == -1:
-                print("Au tour de Jarvis")
+                print("Au tour de Terminator")
 
 
 
