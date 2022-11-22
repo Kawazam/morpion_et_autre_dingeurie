@@ -207,7 +207,6 @@ def playerVesusCpuGame():
 #Définir une fonction playerVersusJarvisGame() qui permet de jouer contre une intelligence artificiel qui ne peux que gagner ou égaliser
 
 
-
 #-----------------------PLAYER VS TERMINATOR-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 def playerVesusTerminatorGame():
     #Definir un tableau de 3 x 3 avec des symboles vide.
