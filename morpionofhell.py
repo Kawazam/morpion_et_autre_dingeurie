@@ -91,31 +91,31 @@ def playerVesusTerminatorGame():
                     #Si il y une situation de victoire assuré au positions 1-1  2-2  2-0
                     if tab[1][1] == "X" and tab[2][2] == "X" and tab[2][0] == "X":
                         #Si le joueur joue en 2-1
-                        if tab[2][1] == "O":
+                        if tab[0][2] == "_":
                             #Jouer en 0-2
                             tab[0][2] = "X"
                         #Si le joueur joue en 0-2
-                        elif tab[0][2] == "O":
+                        elif tab[2][1] == "_":
                             #Jouer en 2-1
                             tab[2][1] = "X"
                         #Sinon
                         else:
-                            #placé le symbole du joueur à la position 0-2
-                            tab[0][2] = "X"
+                            #placé le symbole du joueur à la position 0-1
+                            tab[0][1] = "X"
                     #Sinon si il y a une situation de victoire assuré au positions 1-1  2-2  0-2
                     elif tab[1][1] == "X" and tab[2][2] == "X" and tab[0][2] == "X":
                         #Si le joueur joue en 1-2
-                        if tab[1][2] == "O":
+                        if tab[2][0] == "_":
                             #Jouer en 2-0
                             tab[2][0] = "X"
                         #Si le joueur joue en 2-0
-                        elif tab[2][0] == "O":
+                        elif tab[1][2] == "_":
                             #Jouer en 1-2
                             tab[1][2] = "X"
                         #Sinon
                         else:
                             #placé le symbole du joueur à la position 2-0
-                            tab [2][0] = "X"
+                            tab [1][0] = "X"
                     #Sinon si il peut gagner directement il le fait
                     elif tab[1][1] == "X" and tab[1][0] == "X":
                         tab[1][2] = "X"
