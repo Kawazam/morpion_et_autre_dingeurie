@@ -18,6 +18,9 @@ def playerVesusTerminatorGame():
 
     #Rentrer la première action de Terminator qui joue aux coordonnées [1][1]
     tab[1][1] = "X"
+    #Afficher une primière fois la grille
+    for i in tab:
+        print(i)
 
     #Tant que True
     while True:
@@ -198,20 +201,20 @@ def playerVesusTerminatorGame():
                 #Ecrire le nom du joueur dont c'est le tour en fonction de l'ID du joueur actuel dans curPlayer 
                 print(f"{curPlayer[curPlayerID]}, c'est à toi !")
 
-                #Assigner à la variable choixX le retour de la variable input("coordonné x : ") sous forme d'entier
-                choixX = int(input("coordonné x : "))
+                #Assigner à la variable choixX le retour de la variable input("Ligne 0 1 ou 2 : ") sous forme d'entier
+                choixX = int(input("Ligne 0 1 ou 2 : "))
                 #Si choixX ne rentre pas dans le tableau
                 while choixX < 0 or choixX > 2:
                     #Afficher un message d'erreur
                     print("Choix invalide")
-                #Assigner à la variable choixX le retour de la variable input("coordonné y : ") sous forme d'entier
-                choixY = int(input("coordonné y : "))
+                #Assigner à la variable choixX le retour de la variable input("Colonne 0 1 ou 2 : ") sous forme d'entier
+                choixY = int(input("Colonne 0 1 ou 2 : "))
                 #Si choixY ne rentre pas dans le tableau
                 if choixY < 0 or choixY > 2:
                 #Afficher un message d'erreur
                     print("Choix invalide")
-                    #Assigner à la variable choixX le retour de la variable input("coordonné y : ") sous forme d'entier
-                    choixY = int(input("coordonné y : "))
+                    #Assigner à la variable choixX le retour de la variable input("Colonne 0 1 ou 2 : ") sous forme d'entier
+                    choixY = int(input("Colonne 0 1 ou 2 : "))
 
             #Si tab[choixX][choixY] est different de "_".
             if tab[choixX][choixY] != "_" and curPlayerID == 1:
@@ -241,29 +244,12 @@ def playerVesusTerminatorGame():
         if (tab[0][0] == cur and tab[0][1] == cur and tab[0][2] == cur) or (tab[1][0] == cur and tab[1][1] == cur and tab[1][2] == cur) or (tab[2][0] == cur and tab[2][1] == cur and tab[2][2] == cur) or (tab[0][0] == cur and tab[1][0] == cur and tab[2][0] == cur) or (tab[0][1] == cur and tab[1][1] == cur and tab[2][1] == cur) or (tab[0][2] == cur and tab[1][2] == cur and tab[2][2] == cur) or (tab[0][0] == cur and tab[1][1] == cur and tab[2][2] == cur) or (tab[0][2] == cur and tab[1][1] == cur and tab[2][0] == cur):
             #Alors on ecrit quel joueur à gagné
             print(f"{curPlayer[curPlayerID]} a gagné")
-            #Afficher un retour au menu
-            # print("retour au menu")
-            # print("retour au menu.")
-            # print("retour au menu..")
-            # print("retour au menu...")
-            # morpionMenu()
         #Sinon si action égale à 8
         elif actionTurn == 8:
             #Afficher "Pas de gagnant"
             print("Pas de gagant")
-            return
-            # #Afficher un retour au menu
-            # print("retour au menu")
-            # print("retour au menu.")
-            # print("retour au menu..")
-            # print("retour au menu...")
-            # morpionMenu()
 
-        
+        #Définir curPlayerID à sa valeur multiplié par -1
         curPlayerID = curPlayerID * -1
-        # #Si tab[choixX][choixY] est égal au symbole du joueur.
-        # if tab[choixX][choixY] == playerSymbole[curPlayerID]:
-        #     #Alors on change l'ID de curPlayerID en multipliant la variable par -1.
-        #     print("bloup")
 
 playerVesusTerminatorGame()
