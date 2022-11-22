@@ -1,3 +1,5 @@
+#DEBUT
+
 #On admet la fonction input() qui renvoie la valeur donné par l'utilisateur.
 
 #Definir une fonction morpion() qui lance une partie de morpion entre deux joueurs.
@@ -29,3 +31,5 @@
             #Alors on change l'ID de curPlayerID en multipliant la variable par -1.
 
 #Executer la fonction morpion()
+
+#FIN
