@@ -212,4 +212,4 @@ def playerVesusTerminatorGame():
         #     #Alors on change l'ID de curPlayerID en multipliant la variable par -1.
         #     print("bloup")
 
-playerVesusJarvisGame()
+playerVesusTerminatorGame()
