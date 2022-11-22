@@ -34,22 +34,22 @@ def morpionClassic():
             #Ecrire le nom du joueur dont c'est le tour en fonction de l'ID du joueur actuel dans curPlayer 
             print(f"{curPlayer[curPlayerID]}, c'est à toi !")
 
-            #Assigner à la variable choixX le retour de la variable input("coordonné x : ") sous forme d'entier
-            choixX = int(input("coordonné x : "))
+            #Assigner à la variable choixX le retour de la variable input("Ligne 0 1 ou 2 : ") sous forme d'entier
+            choixX = int(input("Ligne 0 1 ou 2 : "))
             #Si choixX ne rentre pas dans le tableau
             while choixX < 0 or choixX > 2:
             #Afficher un message d'erreur
                 print("Choix invalide")
-                #Assigner à la variable choixX le retour de la variable input("coordonné x : ") sous forme d'entier
-                choixX = int(input("coordonné x : "))
-            #Assigner à la variable choixX le retour de la variable input("coordonné y : ") sous forme d'entier
-            choixY = int(input("coordonné y : "))
+                #Assigner à la variable choixX le retour de la variable input("Ligne 0 1 ou 2 : ") sous forme d'entier
+                choixX = int(input("Ligne 0 1 ou 2 : "))
+            #Assigner à la variable choixX le retour de la variable input("Colonne 0 1 ou 2 : ") sous forme d'entier
+            choixY = int(input("Colonne 0 1 ou 2 : "))
             #Si choixY ne rentre pas dans le tableau
             if choixY < 0 or choixY > 2:
             #Afficher un message d'erreur
                 print("Choix invalide")
-                #Assigner à la variable choixX le retour de la variable input("coordonné y : ") sous forme d'entier
-                choixY = int(input("coordonné y : "))
+                #Assigner à la variable choixX le retour de la variable input("Colonne 0 1 ou 2 : ") sous forme d'entier
+                choixY = int(input("Colonne 0 1 ou 2 : "))
 
             #Si tab[choixX][choixY] est different de "_".
             if tab[choixX][choixY] != "_":
@@ -137,20 +137,20 @@ def playerVesusCpuGame():
                 #Ecrire le nom du joueur dont c'est le tour en fonction de l'ID du joueur actuel dans curPlayer 
                 print(f"{curPlayer[curPlayerID]}, c'est à toi !")
 
-                #Assigner à la variable choixX le retour de la variable input("coordonné x : ") sous forme d'entier
-                choixX = int(input("coordonné x : "))
+                #Assigner à la variable choixX le retour de la variable input("Ligne 0 1 ou 2 : ") sous forme d'entier
+                choixX = int(input("Ligne 0 1 ou 2 : "))
                 #Si choixX ne rentre pas dans le tableau
                 while choixX < 0 or choixX > 2:
                     #Afficher un message d'erreur
                     print("Choix invalide")
-                #Assigner à la variable choixX le retour de la variable input("coordonné y : ") sous forme d'entier
-                choixY = int(input("coordonné y : "))
+                #Assigner à la variable choixX le retour de la variable input("Colonne 0 1 ou 2 : ") sous forme d'entier
+                choixY = int(input("Colonne 0 1 ou 2 : "))
                 #Si choixY ne rentre pas dans le tableau
                 if choixY < 0 or choixY > 2:
                 #Afficher un message d'erreur
                     print("Choix invalide")
-                    #Assigner à la variable choixX le retour de la variable input("coordonné y : ") sous forme d'entier
-                    choixY = int(input("coordonné y : "))
+                    #Assigner à la variable choixX le retour de la variable input("Colonne 0 1 ou 2 : ") sous forme d'entier
+                    choixY = int(input("Colonne 0 1 ou 2 : "))
 
             #Si tab[choixX][choixY] est different de "_".
             if tab[choixX][choixY] != "_":
@@ -411,20 +411,20 @@ def playerVesusTerminatorGame():
                 #Ecrire le nom du joueur dont c'est le tour en fonction de l'ID du joueur actuel dans curPlayer 
                 print(f"{curPlayer[curPlayerID]}, c'est à toi !")
 
-                #Assigner à la variable choixX le retour de la variable input("coordonné x : ") sous forme d'entier
-                choixX = int(input("coordonné x : "))
+                #Assigner à la variable choixX le retour de la variable input("Ligne 0 1 ou 2 : ") sous forme d'entier
+                choixX = int(input("Ligne 0 1 ou 2 : "))
                 #Si choixX ne rentre pas dans le tableau
                 while choixX < 0 or choixX > 2:
                     #Afficher un message d'erreur
                     print("Choix invalide")
-                #Assigner à la variable choixX le retour de la variable input("coordonné y : ") sous forme d'entier
-                choixY = int(input("coordonné y : "))
+                #Assigner à la variable choixX le retour de la variable input("Colonne 0 1 ou 2 : ") sous forme d'entier
+                choixY = int(input("Colonne 0 1 ou 2 : "))
                 #Si choixY ne rentre pas dans le tableau
                 if choixY < 0 or choixY > 2:
                 #Afficher un message d'erreur
                     print("Choix invalide")
-                    #Assigner à la variable choixX le retour de la variable input("coordonné y : ") sous forme d'entier
-                    choixY = int(input("coordonné y : "))
+                    #Assigner à la variable choixX le retour de la variable input("Colonne 0 1 ou 2 : ") sous forme d'entier
+                    choixY = int(input("Colonne 0 1 ou 2 : "))
 
             #Si tab[choixX][choixY] est different de "_".
             if tab[choixX][choixY] != "_" and curPlayerID == 1:
