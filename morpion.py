@@ -291,6 +291,10 @@ def playerVesusTerminatorGame():
                     elif tab[2][0] == "X" and tab[2][2] == "O":
                         #placé le symbole du joueur à la position 1-2
                         tab[1][2] = "X"
+                    #Sinon
+                    else:
+                        #placé le symbole du joueur à la position 2-0
+                        tab[2][0] = "X"
                 #Sinon si actionTurn est égale à 5
                 elif actionTurn == 5:
                     #Si il y une situation de victoire assuré au positions 1-1  2-2  2-0
