@@ -329,6 +329,15 @@ def playerVesusTerminatorGame():
                         else:
                             #placé le symbole du joueur à la position 2-0
                             tab [2][0] = "X"
+                    #Sinon si il peut gagner directement il le fait
+                    elif tab[1][1] == "X" and tab[1][0] == "X":
+                        tab[1][2] = "X"
+                    elif tab[1][1] == "X" and tab[1][2] == "X":
+                        tab[1][0] = "X"
+                    elif tab[1][1] == "X" and tab[0][1] == "X":
+                        tab[2][1] = "X"
+                    elif tab[1][1] == "X" and tab[2][1] == "X":
+                        tab[0][1] = "X"
                     #Si la position 1-2 est égale à "_"
                     elif tab[2][1] == "_":
                         #placé le symbole du joueur à la position 1-2
@@ -357,8 +366,17 @@ def playerVesusTerminatorGame():
                         tab[2][2] = "X"
                 #Sinon si actionTurn est égale à 7
                 elif actionTurn == 7:
+                    #Sinon si il peut gagner directement il le fait
+                    if tab[1][1] == "X" and tab[1][0] == "X":
+                        tab[1][2] = "X"
+                    elif tab[1][1] == "X" and tab[1][2] == "X":
+                        tab[1][0] = "X"
+                    elif tab[1][1] == "X" and tab[0][1] == "X":
+                        tab[2][1] = "X"
+                    elif tab[1][1] == "X" and tab[2][1] == "X":
+                        tab[0][1] = "X"
                     #Si la position 1-2 est égale à "_"
-                    if tab[1][2] == "_":
+                    elif tab[1][2] == "_":
                         #placé le symbole du joueur à la position 1-2
                         tab[1][2] = "X"
                     #Sinon si la position 2-1 est égale à "_"
