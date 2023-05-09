@@ -3,7 +3,7 @@ from random import randint
 import os
 clear = lambda: os.system('cls')
 
-
+#bloup
 
 #-----------------------MORPION--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Definir une fonction morpionGame() qui lance une partie de morpion entre deux joueurs.
